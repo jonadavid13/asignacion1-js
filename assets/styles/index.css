@@ -46,6 +46,24 @@ body > * {
   width: 100%;
   margin-bottom: 10px;
 }
+.main-container .ejercicio-container {
+  margin-top: 15px;
+}
+.main-container .ejercicio-container .card {
+  border: none;
+}
+.main-container .ejercicio-container .info-card {
+  padding: 8px 10px;
+}
+.main-container .ejercicio-1 {
+  width: 500px;
+}
+.main-container .ejercicio-1 .input-container {
+  width: 100%;
+}
+.main-container .ejercicio-1 .input-container .form-control {
+  width: 100%;
+}
 
 .footer {
   background-color: #cdd9e9;

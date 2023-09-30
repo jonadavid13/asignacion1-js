@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="assets/icons/js-icon-rounded.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles/index.css">
+    <script src="assets/js/ejercicio1.js"></script>
 </head>
 <body>
     <header class="header align-items-center">
@@ -19,8 +20,49 @@
         <div id="Ejercicio1" class="section-container">
             <h4 class="page-title fw-semibold pb-2">Ejercicio 1</h4>
         </div>
-        <section class="ejercicio-container">
+        <section class="ejercicio-container ejercicio-1">
+            <div class="input-container mb-3">
+                <label for="inputPeso" class="form-label">Peso del alumno: </label>
+                <div class="sub-container d-flex">
+                    <input type="number" name="inputPeso" id="inputPeso" class="form-control" min="0" max="999" placeholder="Ingrese el peso del alumno">
+                    <button 
+                        id="btnRegistrarPeso" type="button" 
+                        class="btnRegistrar btn btn-primary ms-2"
+                        onclick="agregarPeso()">
+                        Registrar
+                    </button>
+                </div>
+            </div>
 
+            <div id="Alerta">
+                <div class="alert alert-warning alert-dismissible fade show d-none" role="alert">
+                    <span>Alerta predeterminada</span>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="card info-card" id="infoContainerE1" class="d-flex flex-column">
+                <div class="info-group mb-3">
+                    <span class="fw-semibold">Alumnos registrados: </span>
+                    <span id="cantidadRegistros">0</span>
+                </div>
+                <div class="info-group">
+                    <span class="fw-semibold">Alumnos de menos de 40 Kg: </span>
+                    <span id="span-cantidad1">0</span>
+                </div>
+                <div class="info-group">
+                    <span class="fw-semibold">Alumnos entre 40 y 50 Kg: </span>
+                    <span id="span-cantidad2">0</span>
+                </div>
+                <div class="info-group">
+                    <span class="fw-semibold">Alumnos de más de 50 y menos de 60 Kg: </span>
+                    <span id="span-cantidad3">0</span>
+                </div>
+                <div class="info-group">
+                    <span class="fw-semibold">Alumnos de más o igual a 60: </span>
+                    <span id="span-cantidad4">0</span>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
