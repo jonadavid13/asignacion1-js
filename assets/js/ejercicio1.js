@@ -34,6 +34,7 @@ function agregarPeso(){
             document.getElementById("span-cantidad3").innerHTML = mas50y60;
             document.getElementById("span-cantidad4").innerHTML = masIgual60;
 
+            document.getElementById("inputPeso").value = "";
         }
     } else {
         document.getElementById("Alerta").innerHTML = `<div class="alert alert-warning alert-dismissible fade show" role="alert">

@@ -64,6 +64,19 @@ body > * {
 .main-container .ejercicio-1 .input-container .form-control {
   width: 100%;
 }
+.main-container .ejercicio-2 .row {
+  width: 100%;
+}
+.main-container .ejercicio-2 .form-container {
+  width: 100%;
+}
+.main-container .ejercicio-2 .cards-container {
+  flex-wrap: wrap;
+}
+.main-container .ejercicio-2 .cards-container .card {
+  margin-right: 10px;
+  padding-bottom: 20px;
+}
 
 .footer {
   background-color: #cdd9e9;
