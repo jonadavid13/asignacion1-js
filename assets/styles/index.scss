@@ -8,4 +8,52 @@
 
 body {
     font-family: 'Red Hat Display', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #E2E7EC;
+    padding: 0;
+}
+
+body > * {
+    padding: 15px;
+}
+
+.header {
+    width: 100%;
+    background-color: #afc0ee;
+    display: flex;
+
+    .main-link {
+        text-decoration: none;
+        color: initial;
+    }
+
+    .header-title {
+        margin-bottom: 0;
+    }
+
+    .home-button {
+        padding: 3px 10px;
+        border: none;
+    }
+}
+
+.main-container {
+    min-height: calc(100vh - 114px);
+
+    .page-title {
+        border-bottom: solid #b5c3d6 .5px;
+    }
+
+    
+    .buttons-container {
+        width: fit-content;
+        
+        .ejercicio-link {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.footer {
+    background-color: #cdd9e9;
 }
