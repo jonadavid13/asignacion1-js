@@ -48,9 +48,13 @@ function verificarDatos(){
     } else {
         document.getElementById("alertForm").innerHTML = `<div class="alert alert-success" role="alert">
         <span>Alumno registrado</span>
-        </div>`;;
+        </div>`;
         let materiasAprobadas = 0;
-        
+
+        notaMatematicas = parseInt(notaMatematicas);
+        notaFisica = parseInt(notaFisica);
+        notaProgramacion = parseInt(notaProgramacion);
+
         alumnosRegistrados += 1;
         
         sumaFisica += notaFisica;
@@ -105,9 +109,11 @@ function verificarDatos(){
         }
         
         // Promedios
-        promedioMath = sumaMath / alumnosRegistrados;
-        promedioFisica = sumaFisica / alumnosRegistrados;
-        promedioProg = sumaProg / alumnosRegistrados;
+        promedioMath = (sumaMath / alumnosRegistrados).toFixed(1);
+        promedioFisica = (sumaFisica / alumnosRegistrados).toFixed(1);
+        promedioProg = (sumaProg / alumnosRegistrados).toFixed(1);
+
+        console.log("suma/registros: " + sumaMath + " / " + alumnosRegistrados)
 
         document.getElementById("promedioMath").innerHTML = `<span>${promedioMath}</span>`;
         document.getElementById("aprobadosMath").innerHTML = `<span>${aprobadosMath}</span>`;
