@@ -86,4 +86,8 @@ body > * {
 
 .footer {
   background-color: #cdd9e9;
+}
+.footer .footer-icon {
+  text-decoration: none;
+  color: initial;
 }/*# sourceMappingURL=index.css.map */
