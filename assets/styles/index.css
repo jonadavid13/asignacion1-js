@@ -64,16 +64,22 @@ body > * {
 .main-container .ejercicio-1 .input-container .form-control {
   width: 100%;
 }
-.main-container .ejercicio-2 .row {
+.main-container .ejercicio-2 .right-container .card-header, .main-container .ejercicio-2 .right-container .card-body {
+  padding: 12px;
+}
+.main-container .ejercicio-2 .right-container .card-title {
+  margin-bottom: 0;
+}
+.main-container .ejercicio-3 .row {
   width: 100%;
 }
-.main-container .ejercicio-2 .form-container {
+.main-container .ejercicio-3 .form-container {
   width: 100%;
 }
-.main-container .ejercicio-2 .cards-container {
+.main-container .ejercicio-3 .cards-container {
   flex-wrap: wrap;
 }
-.main-container .ejercicio-2 .cards-container .card {
+.main-container .ejercicio-3 .cards-container .card {
   margin-right: 10px;
   padding-bottom: 20px;
 }

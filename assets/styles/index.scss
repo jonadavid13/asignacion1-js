@@ -77,6 +77,18 @@ body > * {
     }
 
     .ejercicio-2 {
+        .right-container {
+            .card-header, .card-body {
+                padding: 12px;
+            }
+
+            .card-title {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .ejercicio-3 {
 
         .row {
             width: 100%;

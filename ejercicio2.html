@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="assets/icons/js-icon-rounded.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles/index.css">
+    <script src="assets/js/ejercicio2.js"></script>
 </head>
 <body>
     <header class="header align-items-center">
@@ -16,11 +17,50 @@
         <a class="home-button btn btn-primary ms-3" href="index.html">Volver al inicio</a>
     </header>
     <main class="main-container">
-        <div id="Ejercicio1" class="section-container">
+        <div id="Ejercicio2" class="section-container">
             <h4 class="page-title fw-semibold pb-2">Ejercicio 2</h4>
         </div>
-        <section class="ejercicio-container">
+        <section class="ejercicio-container ejercicio-2 d-flex">
+            <article class="left-container calculadora d-flex flex-column justify-content-between">
+                <div>
+                    <h6 class="heading-info">Cálculo de Interés generado en una cuenta de ahorro a fin de año</h6>
+                    <div class="form-card d-flex mb-3">
+                        <input type="number" class="form-control" id="idInicial" name="txtInicial" 
+                            placeholder="Ingrese el monto inicial a depositar (en Bs.)"
+                            min="1" required>
+                        <button type="button" class="btn btn-primary ms-2" onclick="calcularInteres()">Calcular</button>
+                    </div>
+                </div>
 
+                <div id="alertForm"></div>
+ 
+                <div class="card-results card p-2">
+                    <label for="idResultado" class="mb-1">Interés generado: </label>
+                    <input type="text" class="form-control" id="idResultado" name="txtResultado" 
+                        placeholder="0,00 Bs." disabled>
+                </div>
+            </article>
+            <article class="right-container info-card card ms-4 p-0">
+                <div class="card-header">
+                    <h5 class="card-title">Parámetros</h4>
+                </div>
+                <div class="card-body">
+                    <span class="fw-semibold">Tasa de interés: </span>
+                    <span>15% anual (1.25% mensual)</span><br>
+
+                    <span class="fw-semibold">Monto mensual a depositar: </span>
+                    <span>250,00 Bs.</span><br>
+
+                    <span class="fw-semibold">Mes de inicio: </span>
+                    <span>Enero</span><br>
+
+                    <span class="fw-semibold">Mes final: </span>
+                    <span>Diciembre</span><br>
+
+                    <span class="fw-semibold">Total de meses: </span>
+                    <span>12</span><br>
+                </div>
+            </article>
         </section>
     </main>
     <footer class="footer">
